@@ -1,2 +1,2 @@
-# wikipediaViewer
+# Wikipedia Viewer
 Wikipedia Viewer
