@@ -1,9 +1,11 @@
 $(document).ready( function() {
 
-	var URL = "https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=Albert%20Einstein";
+	var URL = "https://en.wikipedia.org/w/api.php?action=opensearch&search=butterfly&format=json&origin=*";
 	fetch(URL)
   .then(function(response) {
-    console.log(response);
+    return response.json();
+  }).then(function(response){
+  	console.log(response);
   })
 	
 });
