@@ -1,10 +1,56 @@
 body{
-	background-color: #0ade9f;
+	background-color: #0aadde00;
 }
 
-.search-container{
-	display: flex;
-	justify-content: center;
-	max-width: 500px;
+.wiki-image img{
+	width: 20%;
+}
+
+.wiki-image{
 	margin: auto;
+	text-align: center;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.searchbar-container{
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	max-width: 720px;
+}
+
+.searchbar-container input{
+	width: 60%;
+}
+
+i{
+	background-color: #eee;
+}
+
+.random-article{
+	text-align: center;
+	
+}
+
+.search-item{
+	background-color: #eee;
+	width: 80%;
+	margin: auto;
+}
+
+a:hover { 
+    background-color: yellow;
+}
+
+.search-item .title{
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 0;
+	padding: 10px 10px 5px 20px;
+}
+
+.search-item .discription{
+	padding: 5px 10px 10px 20px;
 }
