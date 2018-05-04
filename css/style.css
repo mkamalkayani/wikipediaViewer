@@ -35,22 +35,30 @@ i{
 }
 
 .search-item{
-	background-color: #eee;
 	width: 80%;
 	margin: auto;
 }
 
-a:hover { 
-    background-color: yellow;
+.search-item{
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.search-item p{
+	margin-bottom: 0;
+	padding-left: 25px;
 }
 
 .search-item .title{
 	font-weight: bold;
 	font-size: 18px;
-	margin-bottom: 0;
-	padding: 10px 10px 5px 20px;
+	color: #1a0dabcf;
+}
+
+.search-item .link{
+	color:#006621;
 }
 
 .search-item .discription{
-	padding: 5px 10px 10px 20px;
+	/*padding: 5px 10px 10px 20px;*/
 }

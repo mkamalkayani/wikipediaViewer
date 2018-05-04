@@ -28,10 +28,11 @@ $(document).ready( function() {
 		for(let i=0; i<10;i++){
 
 			var text = `<div class="search-item">
-			<a href="${response[3][i]} target="_blank" ">		
+			<a href="${response[3][i]}" target="_blank">		
 			<p class="title">${response[1][i]}</p>
-			<p class="discription">${response[2][i]}</p>
 			</a>
+			<p class="link">${response[3][i]}<p>
+			<p class="discription">${response[2][i]}</p>
 			</div>`;
 		// console.log(text);
 
