@@ -7,9 +7,14 @@ $(document).ready( function() {
 
 	searchBar.click(function(){
 		$(this).val("");
+	})
+
+	$('.search-buttons .btn').click(function(){
+		fetchData( $(searchBar).val() );
 	})	
 
 	function fetchData(searchTerm){
+		// if(searchTerm)
 		const URL = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&origin=*&search=" + searchTerm;
 
 		fetch(URL)
