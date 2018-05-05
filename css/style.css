@@ -1,3 +1,4 @@
+/******* Global  **********************************/
 body{
 	background-color: #0aadde00;
 }
@@ -6,6 +7,7 @@ p{
 	margin-bottom: 0;
 }
 
+/******* Wiki Image  **********************************/
 .wiki-image img{
 	width: 20%;
 }
@@ -17,6 +19,7 @@ p{
 	margin-bottom: 5vh;
 }
 
+/******* Search Bar  **********************************/
 .searchbar-container{
 	display: flex;
 	margin: auto;
@@ -41,6 +44,8 @@ p{
 	border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9 !important;
 }
 
+
+/******* Search Buttons  **********************************/
 .search-buttons{
 	display: flex;
 	justify-content: center;
@@ -72,6 +77,8 @@ p{
 	border: 1px solid #4d90fe;
 }
 
+/******* Search Results  **********************************/
+
 .search-item{
 	width: 80%;
 	margin: auto;
@@ -82,6 +89,13 @@ p{
 	padding: 10px;
 }
 
+@media (max-width: 600px) {
+	.search-item{
+	box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+	border-radius: 4px;
+	}
+}
+
 .search-item p{
 	margin-bottom: 0;
 	padding-left: 25px;
@@ -89,12 +103,15 @@ p{
 
 .search-item .title{
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 1.25rem;
 	color: #1a0dabcf;
 }
 
 .search-item .link{
 	color:#006621;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .search-item .discription{
