@@ -8,11 +8,11 @@ p{
 }
 
 /******* Wiki Image  **********************************/
-.wiki-image img{
+.header .wiki-image img{
 	width: 20%;
 }
 
-.wiki-image{
+.header .wiki-image{
 	margin: auto;
 	text-align: center;
 	margin-top: 5vh;
@@ -20,7 +20,7 @@ p{
 }
 
 /******* Search Bar  **********************************/
-.searchbar-container{
+.header .searchbar-container{
 	display: flex;
 	margin: auto;
 	justify-content: center;
@@ -28,7 +28,7 @@ p{
 	max-width: 720px;
 }
 
-.searchbar-container input{
+.header .searchbar-container input{
 	width: 60%;
 	font: 16px arial,sans-serif;
 	padding-left: 10px;
@@ -36,11 +36,11 @@ p{
 	-webkit-appearance: textfield; 
 }
 
-.searchbar-container input:focus{
+.header .searchbar-container input:focus{
 	-webkit-appearance: textfield;
 }
 
-.searchbar-container input:hover{
+.header .searchbar-container input:hover{
 	border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9 !important;
 }
 
@@ -116,4 +116,34 @@ p{
 
 .search-item .discription{
 	/*padding: 5px 10px 10px 20px;*/
+}
+
+
+/********************************************************************************/
+/* as: after search*/
+/*** After Search is performed*/
+.header-as .img-searchbar{
+	display: flex;
+	margin: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
+/*** Wiki Image after search*/
+.header-as img{
+	width: 100px;
+}
+
+.header-as .wiki-image{
+	/*margin: 5px 5px 0 5px;*/
+}
+
+.header-as input{
+	width: 60vw;
+	max-width: 600px;
+	font: 16px arial,sans-serif;
+	margin-left: 10px;
+	padding-left: 10px;
+	line-height: 34px;
+	-webkit-appearance: textfield; 
 }
