@@ -1,26 +1,40 @@
 $(document).ready( function() {
 
+	// Get the search results when user presses Enter
 	const searchBar = $('input[name=search');
 	searchBar.change(function(){
+		$('.header').removeClass('header').addClass('header-as');
 		fetchData( $(this).val() );
 	})
 
-	searchBar.click(function(){
-		$(this).val("");
+	// // Clear the search bar
+	// searchBar.click(function(){
+	// 	$(this).val("");
+	// })
+
+	// Get the search results when user clicks the button
+	$('.search-buttons .btn').click(function(){
+		$('.header').removeClass('header').addClass('header-as');
+		fetchData( $(searchBar).val() );
 	})
 
-	$('.search-buttons .btn').click(function(){
-		fetchData( $(searchBar).val() );
-	})	
+	// Reload the page
+	$('img').click(function(){
+		location.reload();
+	}) 
 
 	function fetchData(searchTerm){
-		// if(searchTerm)
 		const URL = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&origin=*&search=" + searchTerm;
 
 		fetch(URL)
 		.then(function(response) {
 			return response.json();
-		}).then(function(response){
+		})
+		.then(function(response){
+			// console.log(response);
+			if(response[1].length !== 10){
+				return console.log("error");
+			}
 			updateSearchResults(response);
 		})
 	}
@@ -45,10 +59,9 @@ $(document).ready( function() {
 	}
 }
 
+// catch(invalid search){
+// 	consol.log('invalid search')
+// }
+
 
 });
-
-
-// $searchResults.append('<p class="search-title">' + response[1][0] + '</p>');
-		// $searchResults.append('<p class="search-description">' + response[2][0] + '</p>');
-		// $searchResults.append('<p class="search-link">' + response[3][0] + '</p>');

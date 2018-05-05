@@ -127,11 +127,12 @@ p{
 	margin: 15px;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 0;
 }
 
 /*** Wiki Image after search*/
 .header-as img{
-	width: 100px;
+	width: 70px;
 }
 
 .header-as .wiki-image{
