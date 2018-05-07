@@ -14,8 +14,10 @@ $(document).ready( function() {
 
 	// Get the search results when user clicks the button
 	$('.search-buttons .btn').click(function(){
-		$('.header').removeClass('header').addClass('header-as');
-		fetchData( $(searchBar).val() );
+		if(searchBar.val() !== ""){
+			$('.header').removeClass('header').addClass('header-as');
+			fetchData( $(searchBar).val() );
+		}
 	})
 
 	// Reload the page
